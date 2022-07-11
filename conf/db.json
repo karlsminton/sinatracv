@@ -1,0 +1,8 @@
+{
+  "adapter": "mysql2",
+  "encoding": "utf8",
+  "database": "curriculum",
+  "username": "vitae",
+  "password": "password",
+  "host": "localhost"
+}
