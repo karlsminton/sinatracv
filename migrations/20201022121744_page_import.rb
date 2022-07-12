@@ -8,7 +8,7 @@ class PageImport < ActiveRecord::Migration[7.0]
     pages = JSON.parse(file)
 
     pages['pages'].each do |page|
-      Page.create(title: page['title'], identifier: page['identifer'], content: page['content'])
+      Page.create(title: page['title'], urlkey: page['urlkey'], content: page['content'])
     end
   end
 end

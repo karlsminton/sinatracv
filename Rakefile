@@ -4,10 +4,6 @@ require 'json'
 unparsed = File.read('./conf/db.json')
 config = JSON.parse(unparsed)
 
-task :test do
-  puts "test works"
-end
-
 task :migrate  do
   ActiveRecord::Base.establish_connection(config)
   ActiveRecord::MigrationContext.new('migrations/', ActiveRecord::SchemaMigration).migrate

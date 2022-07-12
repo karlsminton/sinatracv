@@ -2,32 +2,32 @@
   "pages": [
     {
       "title": "About Me",
-      "identifier": "home",
+      "urlkey": "home",
       "content": "<h2>Hi I’m Karl!</h2>\n\n<p>Based in the wirral, I’m an ambitious and passionate backend developer with a keen desire to continuously expand and improve my skill set. I strive to build systems to positively impact clients businesses as well as expand mine and my teams knowledge of the subject.\nI understand that the best software is built by teams, and team-work s good interpersonal skills as well as a technical frame of mind. I consider myself to be friendly and outgoing. A keen learner, I’m enthusiastic to learn new technologies, frameworks and languages.</p>"
     },
     {
       "title": "Technologies Used Professionally",
-      "identifier": "technologies",
+      "urlkey": "technologies",
       "content": "<ul><li>PHP</li><li>MySQL</li><li>HTML, CSS & JS</li><li>Basic LESS & SASS</li><li>Magento2 &amp; Wordpress</li><li>XDebug</li><li>Vagrant & Docker</li><li>VCS (Github & BitBucket)</li><li>CI/CD (Jenkins, Bamboo, DeployBot)</li></ul>"
     },
     {
-      "title": "Gene Commerce 2019 - 2021",
-      "identifier": "gene",
+      "title": "Gene Commerce",
+      "urlkey": "gene",
       "content": "<p>Since I’ve joined gene commerce, exclusively a Magento agency, I’ve worked on a number of different projects, largely as support but with a couple of new builds, Tommee Tippee AU & Case Luggage.</p><p>Due to the way the company is organised, having software architects, most of the extensions built are done to exact specifications - For example for a Price Rule module which, hooking in through an observer, changes the price of products depending on custom attributes received through a 3rd party system.</p>"
     },
     {
-      "title": "Yoma 2018 - 2019",
-      "identifier": "yoma",
+      "title": "Yoma",
+      "urlkey": "yoma",
       "content": "<p>In 2018 I left reading room due to the lack of incoming work over a 3 month period, and joined Yoma as a full-stack developer.</p>The lead developer and I worked on a boilerplate system, integrating Wordpress (with Advanced Custom Fields) and Magento 2, to help speed up the development process. Compared to my previous job I also had to do a lot more heavy lifting on the frontend, where I became familiar with LESS / SASS, Gulp & RequireJS.</p>"
     },
     {
-      "title": "Rippleffect / ReadingRoom 2017 - 2018",
-      "identifier": "rippleeffect",
+      "title": "Rippleffect / ReadingRoom",
+      "urlkey": "rippleeffect",
       "content": "<p>I joined Rippleffect as a Magento Developer, as the company was being taken over by ReadingRoom. Having learned Magento2 in the latter part of my previous job. Here I was tasked with maintaining numerous Magento 1 & 2 sites - LFC store, funkin’ cocktails, stoke fc - building new features and fixing existing issues.</p><p>I worked on stokes custom touch retail integration, including additional data in magento 2’s REST API to suit the clients requirements. Most notably I worked on the Ipswich Town FC new build, adding additional backend features to suit requirements as well as porting over the ‘kitbuilder’ a football shirt configurator.</p><p>I expanded my skill set here, adopting new tools such as Bitbucket/Github, Vagrant, XDebug & Docker.</p>"
     },
     {
-      "title": "The Farm Factory - 2012 - 2017",
-      "identifier": "thefarmfactory",
+      "title": "The Farm Factory",
+      "urlkey": "thefarmfactory",
       "content": "<p>In 2012 I joined the company as an apprentice and quickly progressed into a full-stack developer role. Expanding on my existing experience from college I became proficient in HTML & CSS, as well as becoming familiar with a number of popular CMS’s, such as WordPress, Joomla & Magento.</p><p>Along with learning these systems I expanded my skill set by incorporating Javascript, PHP & MySQL. I also gained familiarity with composer and dependency management in general, linux and SSH.</p><p>From here I started taking the lead on projects such as new builds, upgrades, scoping projects and designing custom extensions for sites - leading me to see a project through from design to reality. This job saw me progress from a novice to senior developer, and eventually lead.</p>"
     }
   ]
