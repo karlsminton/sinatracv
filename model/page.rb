@@ -1,12 +1,9 @@
 require 'active_record'
+require 'json'
 
-ActiveRecord::Base.establish_connection(
-  adapter: 'mysql2',
-  encoding: 'utf8',
-  database: 'curriculum',
-  username: 'vitae',
-  password: 'password'
-)
+unparsed = File.read('../conf/db.json')
+config = JSON.parse(unparsed)
+ActiveRecord::Base.establish_connection(config)
 
 class Page < ActiveRecord::Base
 end
