@@ -3,27 +3,32 @@
     {
       "title": "About Me",
       "urlkey": "home",
-      "content": "<h2>Hi I’m Karl!</h2>\n\n<p>Based in the wirral, I’m an ambitious and passionate backend developer with a keen desire to continuously expand and improve my skill set. I strive to build systems to positively impact clients businesses as well as expand mine and my teams knowledge of the subject.\nI understand that the best software is built by teams, and team-work s good interpersonal skills as well as a technical frame of mind. I consider myself to be friendly and outgoing. A keen learner, I’m enthusiastic to learn new technologies, frameworks and languages.</p>"
+      "content": "<h2>Hi I’m Karl!</h2><p>Based in the wirral, I’m an ambitious and passionate backend developer with a keen desire to continuously expand and improve my skill set. I strive to build systems that positively impact clients businesses as well as expand mine and my teams knowledge of the subject. A keen learner, I’m enthusiastic to learn new technologies, frameworks and languages.</p><p>I understand that the best software is built by teams, and collaboration requires good interpersonal skills as well as a technical frame of mind. I consider myself to be friendly and outgoing, as well as a good communicator.</p>"
     },
     {
       "title": "Technologies Used Professionally",
       "urlkey": "technologies",
-      "content": "<ul><li>PHP</li><li>MySQL</li><li>HTML, CSS & JS</li><li>Basic LESS & SASS</li><li>Magento2 &amp; Wordpress</li><li>XDebug</li><li>Vagrant & Docker</li><li>VCS (Github & BitBucket)</li><li>CI/CD (Jenkins, Bamboo, DeployBot)</li></ul>"
+      "content": "<ul><li>PHP</li><li>MySQL</li><li>HTML, CSS & JS</li><li>CSS Preprocessors (LESS & SASS)</li><li>Magento2 & Wordpress</li><li>XDebug</li><li>Vagrant &amp; Docker</li><li>VCS (Github &amp; BitBucket)</li><li>CI/CD (Jenkins, Bamboo, DeployBot)</li></ul>"
+    },
+    {
+      "title": "PMT Online",
+      "urlkey": "pmt",
+      "content": "<p>I joined PMT Online in May 2021 as senior in-house developer.\nMy responsibilities and duties consisted of ensuring site uptime and maintenance, developing solutions based on business requirements, working through support ticket backlog and managing PRs of external agencies that contributed to the codebase.</p><p>In addition to this I also provided day-to-day support to colleagues, as well as helping advise management regarding our development partners and other technology partners.</p><p>In my time at PMT I’ve delivered some great projects including;</p><ul><li>Klarna with a custom express checkout integration</li><li>A bespoke rules-based shipping system which allows the creation of a limitless number of delivery methods, with the ability to restrict, change price & update label based on conditions such as basket price, customer postcode, total weight etc.</li><li>Split Order Messaging which checks what stock sources a product is available in and outputs messages to inform the customer if their order is likely to arrive in multiple parcels</li><ul>"
     },
     {
       "title": "Gene Commerce",
       "urlkey": "gene",
-      "content": "<p>Since I’ve joined gene commerce, exclusively a Magento agency, I’ve worked on a number of different projects, largely as support but with a couple of new builds, Tommee Tippee AU & Case Luggage.</p><p>Due to the way the company is organised, having software architects, most of the extensions built are done to exact specifications - For example for a Price Rule module which, hooking in through an observer, changes the price of products depending on custom attributes received through a 3rd party system.</p>"
+      "content": "<p>Since I’ve joined gene commerce, exclusively a Magento agency, I’ve worked on a number of different projects, largely as support but with a couple of new builds, Tommee Tippee AU/GB/US & Case Luggage.</p><p>Early in my role as a backend developer I had to develop modules working in collaboration with software architects, developing extensions to match exact specifications.</p><p>Later in my role at Gene we moved away from this approach and was involved in the architecture design and development process for projects I was the primary backend developer on.</p><p>Some examples of interesting projects I was involved in are;</p><ul><li>A Price Rule module which, by hooking in through an observer, changes the price of products depending on custom attributes received through the REST API, pushed from a 3rd party system</li><li>A bespoke integration with trustpilot which created local tables for storing review data, checked for the existence of review data on any given SKU once viewed</li><li>If the data existed it displayed this for viewing, however if it did not it would queue an API request to get any instances and save them to the database.</li></ul>"
     },
     {
       "title": "Yoma",
       "urlkey": "yoma",
-      "content": "<p>In 2018 I left reading room due to the lack of incoming work over a 3 month period, and joined Yoma as a full-stack developer.</p>The lead developer and I worked on a boilerplate system, integrating Wordpress (with Advanced Custom Fields) and Magento 2, to help speed up the development process. Compared to my previous job I also had to do a lot more heavy lifting on the frontend, where I became familiar with LESS / SASS, Gulp & RequireJS.</p>"
+      "content": "<p>In 2018 I left ReadingRoom and joined Yoma as a full-stack developer.</p><p>The lead developer and I worked on a boilerplate system, integrating Wordpress (with Advanced Custom Fields) and Magento 2, to help speed up the development process.</p><p>Compared to my previous job I also had to do a lot more heavy lifting on the frontend,  becoming familiar with LESS / SASS, Gulp & RequireJS.</p>"
     },
     {
       "title": "Rippleffect / ReadingRoom",
       "urlkey": "rippleeffect",
-      "content": "<p>I joined Rippleffect as a Magento Developer, as the company was being taken over by ReadingRoom. Having learned Magento2 in the latter part of my previous job. Here I was tasked with maintaining numerous Magento 1 & 2 sites - LFC store, funkin’ cocktails, stoke fc - building new features and fixing existing issues.</p><p>I worked on stokes custom touch retail integration, including additional data in magento 2’s REST API to suit the clients requirements. Most notably I worked on the Ipswich Town FC new build, adding additional backend features to suit requirements as well as porting over the ‘kitbuilder’ a football shirt configurator.</p><p>I expanded my skill set here, adopting new tools such as Bitbucket/Github, Vagrant, XDebug & Docker.</p>"
+      "content": "<p>I joined Rippleffect as a Magento Developer, as the company was being taken over by ReadingRoom. Here I was tasked with maintaining numerous Magento 1 & 2 sites - LFC store, Funkin’ Cocktails, Stoke FC - building new features and fixing existing issues.</p><p>I worked on Stokes custom touch retail integration, including additional data in magento 2’s REST API to suit the clients requirements. Most notably I worked on the Ipswich Town FC new build, adding additional backend features to suit requirements as well as porting over the ‘kitbuilder’; a football shirt configurator.</p><p>I expanded my skill set here, adopting new tools such as Bitbucket/Github, Vagrant, XDebug & Docker.</p>"
     },
     {
       "title": "The Farm Factory",
