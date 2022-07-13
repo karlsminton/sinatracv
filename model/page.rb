@@ -1,7 +1,8 @@
 require 'active_record'
 require 'json'
 
-unparsed = File.read('../conf/db.json')
+path = File.expand_path('../conf/db.json', __dir__)
+unparsed = File.read(path)
 config = JSON.parse(unparsed)
 ActiveRecord::Base.establish_connection(config)
 

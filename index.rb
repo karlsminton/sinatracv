@@ -4,10 +4,8 @@ require_relative './model/page.rb'
 set :public_folder, __dir__ + '/assets'
 
 get '/' do
-  puts Page.all
   @pages = Page.all
   home = Page.find(1)
-  puts home
   @title = home.title
   @content = home.content
   erb :page, :layout => :layout
