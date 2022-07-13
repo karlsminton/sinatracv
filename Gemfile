@@ -19,3 +19,5 @@ gem "mysql2", "~> 0.5.4"
 gem "rake", "~> 13.0"
 
 gem "json", "~> 2.6"
+
+gem "unicorn", "~> 6.1"
