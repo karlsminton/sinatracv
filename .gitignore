@@ -1,4 +1,5 @@
 **/node_modules
 conf/db.json
+assets/dist/styles.css
 logs/
 pids/

@@ -44,12 +44,38 @@
       #content li {
         margin-top: 15px;
       }
+      .menu {
+        cursor: pointer;
+      }
+      .menu > span {
+        display: block;
+        height: 4px;
+        width: 35px;
+        margin: 6px 0;
+        background: #fff;
+        border-radius: 6px;
+      }
+      .open {
+        height: 100%;
+        background: #fff;
+        opacity: 0.;
+      }
+      @media (max-width: 767px) {
+        .linkedin {
+          width: 32px;
+          height: 32px;
+        }
+        .github {
+          width: 32px;
+          height: 32px;
+        }
+      }
     </style>
   </head>
   <body class="font-mono">
     <header>
       <div class="flex max-w-screen-lg mx-auto">
-        <div class="p-4 flex-none max-w-[240px] -mb-[100px]">
+        <div class="p-4 hidden md:flex flex-none max-w-[240px] -mb-[100px]">
           <a href="/">
             <img class="overflow-hidden rounded-full border-solid border-4 border-white" src="/dist/profile.jpg"/>
           </a>
@@ -60,24 +86,36 @@
           </a>
         </div>
         <div class="p-4 flex flex-none items-center justify-self-end">
-          <a class="github"
+          <a class="github hover:opacity-50 transition-opacity"
             href="https://github.com/karlsminton"
             target="_blank"
           >&nbsp;</a>
         </div>
         <div class="p-4 flex flex-none items-center justify-self-end">
           <a
-            class="linkedin"
+            class="linkedin hover:opacity-50 transition-opacity"
             href="https://uk.linkedin.com/in/karl-minton-338a73138"
             target="_blank"
           >&nbsp;</a>
         </div>
+        <div class="p-4 flex flex-none md:hidden items-center justify-self-end">
+          <a
+            id="open"
+            class="menu hover:opacity-50 transition-opacity"
+            onclick="return false;"
+            target="_blank"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
       </div>
     </header>
-    <main class="pt-16 pb-8">
+    <main class="py-4 md:pt-16 md:pb-8">
       <div class="flex max-w-screen-lg mx-auto">
-        <aside class="basis-1/3 pt-16 p-4">
-          <ul class="list-disc list-inside">
+        <aside class="h-0 inset-x-0 top-0 overflow-hidden fixed md:h-auto md:relative md:basis-1/3 md:pt-16 md:p-4" id="menu">
+          <ul class="p-16 md:p-0 text-center md:text-left md:list-disc list-inside">
             <% @pages.each do |page| %>
                 <li class="leading-6">
                   <a class="text-sm" href="<%= '/' + page.urlkey %>"><%= page.title %></a>
@@ -85,7 +123,7 @@
             <% end %>
           </ul>
         </aside>
-        <section id="content" class="basis-2/3 p-4">
+        <section class="md:basis-2/3 p-4" id="content">
           <%= yield %>
         </section>
       </div>
@@ -94,10 +132,19 @@
       <div class="max-w-screen-lg mx-auto content-center">
         <p class="text-sm italic text-center">
           <a class="underline hover:no-underline" href="https://github.com/karlsminton/sinatracv" target="_blank">
-            The code for this CV can be found here
+            The source code for this project
           </a>
         </p>
       </div>
     </footer>
+    <script type="text/javascript">
+      (function(){
+        var menu = document.getElementById('menu')
+        var btn = document.getElementById('open')
+        btn.addEventListener('click', function() {
+          menu.classList.add('open')
+        })
+      })()
+    </script>
   </body>
 </html>
