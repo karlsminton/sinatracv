@@ -62,6 +62,14 @@
         background: #fff;
         opacity: 0.;
       }
+      .closeBtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        line-height: 10px;
+        cursor: pointer;
+      }
       @media (max-width: 767px) {
         .linkedin {
           width: 32px;
@@ -141,10 +149,20 @@
     </footer>
     <script type="text/javascript">
       (function(){
+        var closeBtn = document.createElement('div')
+        closeBtn.classList.add('closeBtn')
+        closeBtn.textContent = 'x'
+
         var menu = document.getElementById('menu')
-        var btn = document.getElementById('open')
-        btn.addEventListener('click', function() {
+        var openBtn = document.getElementById('open')
+
+        closeBtn.addEventListener('click', function() {
+          menu.classList.remove('open')
+        })
+
+        openBtn.addEventListener('click', function() {
           menu.classList.add('open')
+          menu.appendChild(closeBtn)
         })
       })()
     </script>
